@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>letter</title>
+</head>
+<body>
+    <input type="text" id="one"><br>
+    <button onclick="emoji()">click</button>
+    <h1 id="sad"></h1>
+    <script>
+        var letter =[
+            [
+                "a",
+                "i miss you chellam &#128533"
+            ],
+            [
+                "b",
+                 " Alwayz Pray 4 U  &#128153"
+            ],
+            [
+                "c",
+                "Fooling U &#128512"
+            ],
+            [
+                "d",
+                "Hugs With Love &#128158"
+            ],
+            [
+                "e",
+                " Big Enemy Of U  &#128520"
+            ],
+            [
+                "f",
+                " Lovely Sister/Brother &#128107"
+            ],
+            [
+                "g",
+                "Very Noughty &#129325"
+            ],
+            [
+                "h",
+                " Loves U But Not Showing &#129321"
+            ],
+            [
+                "i",
+                "Close Friend &#128108"
+            ],
+            [
+                "j",
+                " Life Long Friend &#128536"
+            ],
+            [
+                "k",
+                "Love U &#128149"
+            ],
+            [
+                "l",
+                " I Need As Like Partner &#128145"
+            ],
+            [
+                "m",
+                " Best Mother &#128106"
+            ],
+            [
+                "n",
+                " Dear friend  &#128109"
+            ],
+            [
+                "o",
+                " I Want Kiss U &#128538"
+            ],
+            [
+                "p",
+                "Only Love &#128151"
+            ],
+            [
+                "q",
+                "Ignore U &#128527"
+            ],
+            [
+                "r",
+                "Really loves u  &#128152"
+            ],
+            [
+                "s",
+                "I Love You &#128151"
+            ],
+            [
+                "t",
+                " I like u &#128519"
+            ],
+            [
+                "u",
+                "Always Respect  U &#128526"
+            ],
+            [
+                "v",
+                " I Want A Lip Kiss &#128540"
+            ],
+            [
+                "w",
+                " Want To Propose U &#127801"
+            ],
+            [
+                "x",
+                "unlucky &#128148"
+            ],
+            [
+                "y",
+                " Uses U &#128533"
+            ],
+            [
+                "z",
+                "Emotional Abt U !  &#128530"
+            ]
+        ]
+        function emoji(){
+            var happy = document.getElementById("one").value;
+            
+            letter.forEach(function(name) {
+                if(name[0]== happy){
+                    document.getElementById("sad").innerHTML = name[1];
+                }
+            });
+        }
+
+    </script>
+</body>
+</html>
